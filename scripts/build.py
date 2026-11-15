@@ -225,6 +225,9 @@ def collect_debs(meta):
             fields["Depiction"] = f"{base}depictions/{pkg['id']}.html"
             fields["SileoDepiction"] = f"{base}depictions/{pkg['id']}.json"
             fields.setdefault("Homepage", f"https://github.com/{pkg['github']}")
+            # One spelling of the developer name, whatever each control file says.
+            fields["Maintainer"] = meta["repo"]["maintainer"]
+            fields["Author"] = pkg.get("author", meta["repo"]["maintainer"])
         fields["Filename"] = deb.relative_to(ROOT).as_posix()
         fields["Size"] = str(len(data))
         fields["MD5sum"] = hashlib.md5(data).hexdigest()
@@ -285,14 +288,10 @@ def package_summary(pkg, entries):
         "version": latest,
         "jailbreaks": ", ".join(ARCH_NAMES.get(a, a) for a in archs),
         "name": newest.get("Name", pkg["id"]),
-        "author": re.sub(r"\s*<.*>", "", newest.get("Author", meta_maintainer(newest))),
+        "author": newest["Author"],
         "notes": notes,
         "date": next((n["date"] for n in notes if n["version"] == latest), None),
     }
-
-
-def meta_maintainer(fields):
-    return fields.get("Maintainer", "")
 
 
 def sileo_depiction(meta, pkg, info):

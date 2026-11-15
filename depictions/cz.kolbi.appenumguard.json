@@ -42,7 +42,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "Developer",
-          "text": "Kolbicz"
+          "text": "Christoph Kolbicz"
         },
         {
           "class": "DepictionSeparatorView"

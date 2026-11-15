@@ -1,8 +1,8 @@
 Package: cz.kolbi.appenumguard
 Name: AppEnumGuard
 Description: SpringBoard-side mitigation for CVE-2025-31207 on rootless and rootHide jailbreaks.
-Maintainer: Kolbicz
-Author: Kolbicz
+Maintainer: Christoph Kolbicz
+Author: Christoph Kolbicz
 Section: Tweaks
 Depends: firmware (>= 15.0), firmware (<< 18.5)
 Conflicts: kolbi.cz.appenumguard, com.christoph.appenumerationfix
@@ -23,8 +23,8 @@ SHA256: f416d9b7db95c566312f65d590a9a919124dd195d6fe8d2118287b11a76f34da
 Package: cz.kolbi.appenumguard
 Name: AppEnumGuard
 Description: SpringBoard-side mitigation for CVE-2025-31207 on rootless and rootHide jailbreaks.
-Maintainer: Kolbicz
-Author: Kolbicz
+Maintainer: Christoph Kolbicz
+Author: Christoph Kolbicz
 Section: Tweaks
 Depends: firmware (>= 15.0), firmware (<< 18.5)
 Conflicts: kolbi.cz.appenumguard, com.christoph.appenumerationfix
@@ -50,7 +50,7 @@ Replaces: com.ryannair05.cylinder
 Provides: com.ryannair05.cylinder (= 1.2.1)
 Icon: https://kolbicz.github.io/repo/icons/cz.kolbi.cylinder.png
 Description: Make your icons dance
-Maintainer: kolbicz
+Maintainer: Christoph Kolbicz
 Author: Ryan Nair
 Section: Tweaks
 Homepage: https://github.com/kolbicz/Cylinder-Reborn
@@ -73,7 +73,7 @@ Replaces: com.ryannair05.cylinder
 Provides: com.ryannair05.cylinder (= 1.2.1)
 Icon: https://kolbicz.github.io/repo/icons/cz.kolbi.cylinder.png
 Description: Make your icons dance
-Maintainer: kolbicz
+Maintainer: Christoph Kolbicz
 Author: Ryan Nair
 Section: Tweaks
 Homepage: https://github.com/kolbicz/Cylinder-Reborn
@@ -131,8 +131,8 @@ SHA256: b30459dce29de5dff44a35c84f6aa57872579654846ca2c9986cfe9eb4c1c42d
 Package: cz.kolbi.sbtweaker
 Name: SBTweaker
 Description: Opt-in SpringBoard customizations for rootless and roothide jailbreaks on iOS 15 and newer: dock and Home Screen layouts, icon backup, App Library, double-tap to lock, animations, navigation slide removal in apps, and fast copy.
-Maintainer: Kolbicz
-Author: Kolbicz
+Maintainer: Christoph Kolbicz
+Author: Christoph Kolbicz
 Section: Tweaks
 Depends: mobilesubstrate, preferenceloader
 Conflicts: com.christoph.sbcustomizer, com.christoph.doubletaplock, com.christoph.noapplibrary, cz.kolbi.noslide
@@ -153,8 +153,8 @@ SHA256: 372a4473c54f091614796acaea3e5e501c58538fc2df309ae6a9bb1eeca2678d
 Package: cz.kolbi.sbtweaker
 Name: SBTweaker
 Description: Opt-in SpringBoard customizations for rootless and roothide jailbreaks on iOS 15 and newer: dock and Home Screen layouts, icon backup, App Library, double-tap to lock, animations, navigation slide removal in apps, and fast copy.
-Maintainer: Kolbicz
-Author: Kolbicz
+Maintainer: Christoph Kolbicz
+Author: Christoph Kolbicz
 Section: Tweaks
 Depends: mobilesubstrate, preferenceloader
 Conflicts: com.christoph.sbcustomizer, com.christoph.doubletaplock, com.christoph.noapplibrary, cz.kolbi.noslide

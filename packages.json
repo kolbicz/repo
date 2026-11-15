@@ -3,7 +3,7 @@
     "url": "https://kolbicz.github.io/repo/",
     "name": "kolbicz",
     "description": "Tweaks by @_kolbicz for rootless and roothide jailbreaks",
-    "maintainer": "kolbicz",
+    "maintainer": "Christoph Kolbicz",
     "twitter": "https://x.com/_kolbicz",
     "github": "https://github.com/kolbicz"
   },
@@ -22,6 +22,7 @@
       "tagline": "Make your icons dance",
       "tint": "#34C759",
       "compatibility": "iOS and iPadOS 15+",
+      "author": "Ryan Nair",
       "credit": "Based on Cylinder Reborn by Ryan Nair",
       "description": "Animated page transitions for the Home Screen, written in Lua. Pick one or several effects, or write your own.\n\nThis fork combines upstream 1.2.0 with iPad rotation and icon-editing fixes, CFPreferences-based settings, logs kept inside the jailbreak root, and native roothide support.\n\nIt replaces `com.ryannair05.cylinder`: installing it removes the original package, and your settings and scripts carry over."
     },
