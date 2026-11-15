@@ -4,7 +4,7 @@
     "name": "OTA Toggle v1.0.2",
     "date": "2026-08-24",
     "url": "https://github.com/kolbicz/OTAToggle/releases/tag/v1.0.2",
-    "body": "## OTA Toggle v1.0.2\n\n### Fixed\n\n- Fixed incorrect “Enabled” results for daemons previously disabled by DarkSword.\n- Native Foundation file access now uses the real system path directly on roothide.\n- An unreadable or missing `disabled.plist` now produces an explicit error instead of being treated as an empty plist.\n- Retains the platform and storage entitlements required by roothide.\n\n### Downloads\n\n- `OTAToggle-v1.0.2-rootless.deb`: rootless jailbreaks (`iphoneos-arm64`)\n- `OTAToggle-v1.0.2-roothide.deb`: roothide jailbreaks (`iphoneos-arm64e`)\n\nA reboot is required after changing the OTA daemon state.\n"
+    "body": "## OTA Toggle v1.0.2\n\n### Fixed\n\n- Fixed incorrect “Enabled” results for daemons previously disabled by DarkSword.\n- Native Foundation file access now uses the real system path directly on roothide.\n- An unreadable or missing `disabled.plist` now produces an explicit error instead of being treated as an empty plist.\n- Retains the platform and storage entitlements required by roothide.\n\n### Downloads\n\n- `OTAToggle-v1.0.2-rootless.deb`: rootless jailbreaks (`iphoneos-arm64`)\n- `OTAToggle-v1.0.2-roothide.deb`: roothide jailbreaks (`iphoneos-arm64e`)\n\nA reboot is required after changing the OTA daemon state.\n\n\n\n### Install with Sileo or Zebra\n\nAdd `https://kolbicz.github.io/repo/` as a source in Sileo or Zebra to install OTA Toggle and get future updates automatically.\n"
   },
   {
     "version": "1.0.1",

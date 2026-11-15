@@ -196,14 +196,16 @@ def md_to_html(md):
 
 
 def release_notes(body):
-    """Drops the Downloads section, since the package manager picks the file,
-    and a leading title that only repeats the version shown above it."""
+    """Drops the Downloads and Install sections, since the package manager picks
+    the file and the repo is already added, and a leading title that only
+    repeats the version shown above it."""
     body = re.sub(r"\A\s*#{1,6}[^\n]*\n", "", body)
     kept, skipping = [], False
     for line in body.replace("\r\n", "\n").split("\n"):
         heading = re.match(r"#{1,6}\s+(.*)", line.strip())
         if heading:
-            skipping = heading.group(1).strip().lower() == "downloads"
+            title = heading.group(1).strip().lower()
+            skipping = title == "downloads" or title.startswith("install")
         if not skipping:
             kept.append(line)
     return "\n".join(kept).strip()
