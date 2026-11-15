@@ -1,0 +1,173 @@
+Package: cz.kolbi.appenumguard
+Name: AppEnumGuard
+Description: SpringBoard-side mitigation for CVE-2025-31207 on rootless and rootHide jailbreaks.
+Maintainer: Kolbicz
+Author: Kolbicz
+Section: Tweaks
+Depends: firmware (>= 15.0), firmware (<< 18.5)
+Conflicts: kolbi.cz.appenumguard, com.christoph.appenumerationfix
+Replaces: kolbi.cz.appenumguard, com.christoph.appenumerationfix
+Provides: kolbi.cz.appenumguard, com.christoph.appenumerationfix
+Architecture: iphoneos-arm64
+Version: 1.2
+Installed-Size: 168
+Depiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.appenumguard.html
+SileoDepiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.appenumguard.json
+Homepage: https://github.com/kolbicz/AppEnumGuard
+Filename: debs/cz.kolbi.appenumguard/AppEnumGuard_1.2_rootless_iphoneos-arm64.deb
+Size: 4262
+MD5sum: b175e1b0e0c7a280685e75be68a6c34d
+SHA1: dcf52cddd537b429da6ec20e88361093c74e9a13
+SHA256: f416d9b7db95c566312f65d590a9a919124dd195d6fe8d2118287b11a76f34da
+
+Package: cz.kolbi.appenumguard
+Name: AppEnumGuard
+Description: SpringBoard-side mitigation for CVE-2025-31207 on rootless and rootHide jailbreaks.
+Maintainer: Kolbicz
+Author: Kolbicz
+Section: Tweaks
+Depends: firmware (>= 15.0), firmware (<< 18.5)
+Conflicts: kolbi.cz.appenumguard, com.christoph.appenumerationfix
+Replaces: kolbi.cz.appenumguard, com.christoph.appenumerationfix
+Provides: kolbi.cz.appenumguard, com.christoph.appenumerationfix
+Architecture: iphoneos-arm64e
+Version: 1.2
+Installed-Size: 72
+Depiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.appenumguard.html
+SileoDepiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.appenumguard.json
+Homepage: https://github.com/kolbicz/AppEnumGuard
+Filename: debs/cz.kolbi.appenumguard/AppEnumGuard_1.2_roothide_iphoneos-arm64e.deb
+Size: 3454
+MD5sum: d4c47d024f6d15e94a7f2a3391ef35bb
+SHA1: eade2a1f5439ca34b59b54eaf32c48c81b6e3ef5
+SHA256: 677d5c336a3d5ffab42c475677af85b53531133745d1e4345586aa9fef0c17e8
+
+Package: cz.kolbi.cylinder
+Name: Cylinder Reborn
+Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.6011), preferenceloader
+Conflicts: com.ryannair05.cylinder
+Replaces: com.ryannair05.cylinder
+Provides: com.ryannair05.cylinder (= 1.2.1)
+Icon: https://kolbicz.github.io/repo/icons/cz.kolbi.cylinder.png
+Description: Make your icons dance
+Maintainer: kolbicz
+Author: Ryan Nair
+Section: Tweaks
+Homepage: https://github.com/kolbicz/Cylinder-Reborn
+SileoDepiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.cylinder.json
+Depiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.cylinder.html
+Architecture: iphoneos-arm64
+Version: 1.2.1
+Installed-Size: 1652
+Filename: debs/cz.kolbi.cylinder/cz.kolbi.cylinder_1.2.1_rootless_iphoneos-arm64.deb
+Size: 274582
+MD5sum: 71e018efebfb7663058ac0da26d3c659
+SHA1: 24146a5d82f7dbd81b38b71782700d6fd9a6daf6
+SHA256: 0158be1601b7f3e8c6456de67ffbec7bdb19f9531b60054a0864733b6b2c0958
+
+Package: cz.kolbi.cylinder
+Name: Cylinder Reborn
+Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.6011), preferenceloader
+Conflicts: com.ryannair05.cylinder
+Replaces: com.ryannair05.cylinder
+Provides: com.ryannair05.cylinder (= 1.2.1)
+Icon: https://kolbicz.github.io/repo/icons/cz.kolbi.cylinder.png
+Description: Make your icons dance
+Maintainer: kolbicz
+Author: Ryan Nair
+Section: Tweaks
+Homepage: https://github.com/kolbicz/Cylinder-Reborn
+SileoDepiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.cylinder.json
+Depiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.cylinder.html
+Architecture: iphoneos-arm64e
+Version: 1.2.1
+Installed-Size: 1636
+Filename: debs/cz.kolbi.cylinder/cz.kolbi.cylinder_1.2.1_roothide_iphoneos-arm64e.deb
+Size: 274792
+MD5sum: b32ffe6e7ac302cbcb7da10c71051037
+SHA1: 546bcdb031c0994e4eeebf5978a1f5b911846e87
+SHA256: f069ccc91aa9cf2fb84d01a1997296ec191a6bfde273b2ee08058f1301b845a6
+
+Package: cz.kolbi.otatoggle
+Name: OTA Toggle
+Depends: firmware (>= 15.0)
+Description: Enable or disable iOS OTA update daemons.
+Maintainer: Christoph Kolbicz
+Author: Christoph Kolbicz
+Section: Utilities
+Architecture: iphoneos-arm64
+Version: 1.0.2
+Installed-Size: 624
+Icon: https://kolbicz.github.io/repo/icons/cz.kolbi.otatoggle.png
+Depiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.otatoggle.html
+SileoDepiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.otatoggle.json
+Homepage: https://github.com/kolbicz/OTAToggle
+Filename: debs/cz.kolbi.otatoggle/OTAToggle-v1.0.2-rootless.deb
+Size: 95768
+MD5sum: e35f6af4e45bf85b9ad42491227aea5f
+SHA1: 1621110e1b58ffc54a6e514b6b9bbd5230234da2
+SHA256: f2d3309ba7b30e218c476cc55757962be4e49d9429a17c9b74f15cebb185008d
+
+Package: cz.kolbi.otatoggle
+Name: OTA Toggle
+Depends: firmware (>= 15.0)
+Description: Enable or disable iOS OTA update daemons.
+Maintainer: Christoph Kolbicz
+Author: Christoph Kolbicz
+Section: Utilities
+Architecture: iphoneos-arm64e
+Version: 1.0.2
+Installed-Size: 628
+Icon: https://kolbicz.github.io/repo/icons/cz.kolbi.otatoggle.png
+Depiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.otatoggle.html
+SileoDepiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.otatoggle.json
+Homepage: https://github.com/kolbicz/OTAToggle
+Filename: debs/cz.kolbi.otatoggle/OTAToggle-v1.0.2-roothide.deb
+Size: 95878
+MD5sum: 3efe88d4a858db0f3328f921e9cc59e9
+SHA1: a72f5f040cb2626603370c7553b48e81c49d7c26
+SHA256: b30459dce29de5dff44a35c84f6aa57872579654846ca2c9986cfe9eb4c1c42d
+
+Package: cz.kolbi.sbtweaker
+Name: SBTweaker
+Description: Opt-in SpringBoard customizations for rootless and roothide jailbreaks on iOS 15 and newer: dock and Home Screen layouts, icon backup, App Library, double-tap to lock, animations, navigation slide removal in apps, and fast copy.
+Maintainer: Kolbicz
+Author: Kolbicz
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader
+Conflicts: com.christoph.sbcustomizer, com.christoph.doubletaplock, com.christoph.noapplibrary, cz.kolbi.noslide
+Replaces: com.christoph.sbcustomizer, com.christoph.doubletaplock, com.christoph.noapplibrary, cz.kolbi.noslide
+Architecture: iphoneos-arm64
+Version: 1.4.0
+Installed-Size: 516
+Icon: https://kolbicz.github.io/repo/icons/cz.kolbi.sbtweaker.png
+Depiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.sbtweaker.html
+SileoDepiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.sbtweaker.json
+Homepage: https://github.com/kolbicz/SBTweaker
+Filename: debs/cz.kolbi.sbtweaker/SBTweaker-1.4.0-rootless.deb
+Size: 80812
+MD5sum: fef1577ae9e1816a69875d06943e211d
+SHA1: b9b4b884b23f892c2de964e07e53f9666e84fabb
+SHA256: 372a4473c54f091614796acaea3e5e501c58538fc2df309ae6a9bb1eeca2678d
+
+Package: cz.kolbi.sbtweaker
+Name: SBTweaker
+Description: Opt-in SpringBoard customizations for rootless and roothide jailbreaks on iOS 15 and newer: dock and Home Screen layouts, icon backup, App Library, double-tap to lock, animations, navigation slide removal in apps, and fast copy.
+Maintainer: Kolbicz
+Author: Kolbicz
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader
+Conflicts: com.christoph.sbcustomizer, com.christoph.doubletaplock, com.christoph.noapplibrary, cz.kolbi.noslide
+Replaces: com.christoph.sbcustomizer, com.christoph.doubletaplock, com.christoph.noapplibrary, cz.kolbi.noslide
+Architecture: iphoneos-arm64e
+Version: 1.4.0
+Installed-Size: 516
+Icon: https://kolbicz.github.io/repo/icons/cz.kolbi.sbtweaker.png
+Depiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.sbtweaker.html
+SileoDepiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.sbtweaker.json
+Homepage: https://github.com/kolbicz/SBTweaker
+Filename: debs/cz.kolbi.sbtweaker/SBTweaker-1.4.0-roothide.deb
+Size: 80992
+MD5sum: 9feab4476cbe2e98048587e53afc4ebb
+SHA1: 1c0fa75a9a7e8ba37781e1436c0b9a13c69070bb
+SHA256: 6aa07beaab02c1b69475cf58d467165353a4e36659172e3f5ceb1277f0b2f326

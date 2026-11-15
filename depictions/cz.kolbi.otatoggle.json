@@ -1,0 +1,125 @@
+{
+  "minVersion": "0.1",
+  "class": "DepictionTabView",
+  "tintColor": "#5856D6",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "A small app that shows the state of Apple's four OTA update services and turns them on or off together. It never changes anything without asking, and can reboot the device to apply the change.\n\n- `com.apple.mobile.softwareupdated`\n- `com.apple.OTATaskingAgent`\n- `com.apple.softwareupdateservicesd`\n- `com.apple.mobile.NRDUpdated`",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.0.2"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Released",
+          "text": "2026-08-24"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS and iPadOS 15+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Jailbreaks",
+          "text": "Rootless, Roothide"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "Christoph Kolbicz"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "Source Code",
+          "action": "https://github.com/kolbicz/OTAToggle",
+          "openExternal": true
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "Report a Problem",
+          "action": "https://github.com/kolbicz/OTAToggle/issues",
+          "openExternal": true
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "Follow @_kolbicz on X",
+          "action": "https://x.com/_kolbicz",
+          "openExternal": true
+        }
+      ]
+    },
+    {
+      "tabname": "Changelog",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.0.2"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "2026-08-24",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### Fixed\n\n- Fixed incorrect “Enabled” results for daemons previously disabled by DarkSword.\n- Native Foundation file access now uses the real system path directly on roothide.\n- An unreadable or missing `disabled.plist` now produces an explicit error instead of being treated as an empty plist.\n- Retains the platform and storage entitlements required by roothide.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.0.1"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "2026-08-24",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### Fixed\n\n- Fixed reading and writing the real iOS `disabled.plist` on roothide.\n- The roothide helper now uses the official `rootfs()` path-conversion API.\n- Added the platform and storage entitlements required by the roothide developer specification.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.0"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "2026-08-24",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Initial public release for iOS and iPadOS 15 or newer.\n\n### Features\n\n- Shows the individual status of all four OTA-related daemons.\n- Automatically checks status when the app opens.\n- Enables or disables all OTA daemons together.\n- Uses atomic plist writes and preserves root ownership and permissions.\n- Offers an optional reboot after applying changes.\n- Supports portrait and landscape orientations on iPhone and iPad.\n- Includes separate packages for rootless and roothide jailbreaks.",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}

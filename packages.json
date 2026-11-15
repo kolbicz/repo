@@ -1,0 +1,45 @@
+{
+  "repo": {
+    "url": "https://kolbicz.github.io/repo/",
+    "name": "kolbicz",
+    "description": "Tweaks by @_kolbicz for rootless and roothide jailbreaks",
+    "maintainer": "kolbicz",
+    "twitter": "https://x.com/_kolbicz",
+    "github": "https://github.com/kolbicz"
+  },
+  "packages": [
+    {
+      "id": "cz.kolbi.sbtweaker",
+      "github": "kolbicz/SBTweaker",
+      "tagline": "Home Screen, Dock and animation tweaks in one package",
+      "tint": "#3478F6",
+      "compatibility": "iOS and iPadOS 15+",
+      "description": "SpringBoard customizations in one package. Every option is off by default; turn on the ones you want under Settings → SBTweaker.\n\n- **Home Screen and Dock:** custom grid for portrait and landscape, Dock icon count, spacing, icon scale, and Free Icon Placement on iOS 17\n- **Hide App Library**, page indicator offsets, and Spotlight dismissal after opening a result\n- **Double Tap to Lock** on the Home Screen and the Lock Screen\n- **Lock Screen Timeout:** keep the Lock Screen awake longer before it dims\n- **Icon Layout Backup:** restores your Home Screen, folders and Dock after rejailbreaking\n- **Animations:** Drag Coefficient, disable the wake animation, the screen off fade and the unlock icon fly-in\n- **Inside apps:** Fast Page Transitions, Fast Sheets and Fast Copy\n\nChanges apply without a respring wherever SpringBoard allows it."
+    },
+    {
+      "id": "cz.kolbi.cylinder",
+      "github": "kolbicz/Cylinder-Reborn",
+      "tagline": "Make your icons dance",
+      "tint": "#34C759",
+      "compatibility": "iOS and iPadOS 15+",
+      "credit": "Based on Cylinder Reborn by Ryan Nair",
+      "description": "Animated page transitions for the Home Screen, written in Lua. Pick one or several effects, or write your own.\n\nThis fork combines upstream 1.2.0 with iPad rotation and icon-editing fixes, CFPreferences-based settings, logs kept inside the jailbreak root, and native roothide support.\n\nIt replaces `com.ryannair05.cylinder`: installing it removes the original package, and your settings and scripts carry over."
+    },
+    {
+      "id": "cz.kolbi.otatoggle",
+      "github": "kolbicz/OTAToggle",
+      "tagline": "Turn iOS OTA update services on or off",
+      "tint": "#5856D6",
+      "compatibility": "iOS and iPadOS 15+",
+      "description": "A small app that shows the state of Apple's four OTA update services and turns them on or off together. It never changes anything without asking, and can reboot the device to apply the change.\n\n- `com.apple.mobile.softwareupdated`\n- `com.apple.OTATaskingAgent`\n- `com.apple.softwareupdateservicesd`\n- `com.apple.mobile.NRDUpdated`"
+    },
+    {
+      "id": "cz.kolbi.appenumguard",
+      "github": "kolbicz/AppEnumGuard",
+      "tagline": "Stops apps from finding out which apps you have installed",
+      "tint": "#FF9500",
+      "compatibility": "iOS 15.0 – 18.4.1",
+      "description": "Mitigates **CVE-2025-31207**: on iOS before 18.5, any app can find out whether a given app is installed, such as banking, messaging or jailbreak apps, by asking SpringBoard to launch it and comparing the error codes. AppEnumGuard makes SpringBoard answer the same way for installed and missing apps.\n\nNot needed on iOS 18.5 and later, where Apple fixed the issue. A tester app to check the mitigation is available on the GitHub releases page."
+    }
+  ]
+}

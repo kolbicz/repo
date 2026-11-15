@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OTA Toggle</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="../CydiaIcon.png">
+</head>
+<body style="--tint: #5856D6">
+<main>
+<header class="pkg">
+<img class="icon" src="../icons/cz.kolbi.otatoggle.png" alt="">
+<div><h1>OTA Toggle</h1><p class="muted">Turn iOS OTA update services on or off</p></div>
+</header>
+<section class="card prose"><p>A small app that shows the state of Apple's four OTA update services and turns them on or off together. It never changes anything without asking, and can reboot the device to apply the change.</p>
+<ul>
+<li><code>com.apple.mobile.softwareupdated</code></li>
+<li><code>com.apple.OTATaskingAgent</code></li>
+<li><code>com.apple.softwareupdateservicesd</code></li>
+<li><code>com.apple.mobile.NRDUpdated</code></li>
+</ul></section>
+<h2>Information</h2>
+<section class="card table"><div class="row"><span>Version</span><span>1.0.2</span></div>
+<div class="row"><span>Released</span><span>2026-08-24</span></div>
+<div class="row"><span>Compatibility</span><span>iOS and iPadOS 15+</span></div>
+<div class="row"><span>Jailbreaks</span><span>Rootless, Roothide</span></div>
+<div class="row"><span>Developer</span><span>Christoph Kolbicz</span></div></section>
+<section class="card links">
+<a href="https://github.com/kolbicz/OTAToggle">Source Code</a>
+<a href="https://github.com/kolbicz/OTAToggle/issues">Report a Problem</a>
+<a href="https://x.com/_kolbicz">Follow @_kolbicz on X</a>
+</section>
+<h2>Changelog</h2><section class="release"><h3>1.0.2 <span class="muted">2026-08-24</span></h3><h5>Fixed</h5>
+<ul>
+<li>Fixed incorrect “Enabled” results for daemons previously disabled by DarkSword.</li>
+<li>Native Foundation file access now uses the real system path directly on roothide.</li>
+<li>An unreadable or missing <code>disabled.plist</code> now produces an explicit error instead of being treated as an empty plist.</li>
+<li>Retains the platform and storage entitlements required by roothide.</li>
+</ul></section>
+<section class="release"><h3>1.0.1 <span class="muted">2026-08-24</span></h3><h5>Fixed</h5>
+<ul>
+<li>Fixed reading and writing the real iOS <code>disabled.plist</code> on roothide.</li>
+<li>The roothide helper now uses the official <code>rootfs()</code> path-conversion API.</li>
+<li>Added the platform and storage entitlements required by the roothide developer specification.</li>
+</ul></section>
+<section class="release"><h3>1.0 <span class="muted">2026-08-24</span></h3><p>Initial public release for iOS and iPadOS 15 or newer.</p>
+<h5>Features</h5>
+<ul>
+<li>Shows the individual status of all four OTA-related daemons.</li>
+<li>Automatically checks status when the app opens.</li>
+<li>Enables or disables all OTA daemons together.</li>
+<li>Uses atomic plist writes and preserves root ownership and permissions.</li>
+<li>Offers an optional reboot after applying changes.</li>
+<li>Supports portrait and landscape orientations on iPhone and iPad.</li>
+<li>Includes separate packages for rootless and roothide jailbreaks.</li>
+</ul></section>
+</main>
+</body>
+</html>

@@ -1,0 +1,198 @@
+{
+  "minVersion": "0.1",
+  "class": "DepictionTabView",
+  "tintColor": "#34C759",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Animated page transitions for the Home Screen, written in Lua. Pick one or several effects, or write your own.\n\nThis fork combines upstream 1.2.0 with iPad rotation and icon-editing fixes, CFPreferences-based settings, logs kept inside the jailbreak root, and native roothide support.\n\nIt replaces `com.ryannair05.cylinder`: installing it removes the original package, and your settings and scripts carry over.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Based on Cylinder Reborn by Ryan Nair",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.2.1"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Released",
+          "text": "2026-11-15"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS and iPadOS 15+"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Jailbreaks",
+          "text": "Rootless, Roothide"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "Ryan Nair"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "Source Code",
+          "action": "https://github.com/kolbicz/Cylinder-Reborn",
+          "openExternal": true
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "Report a Problem",
+          "action": "https://github.com/kolbicz/Cylinder-Reborn/issues",
+          "openExternal": true
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "Follow @_kolbicz on X",
+          "action": "https://x.com/_kolbicz",
+          "openExternal": true
+        }
+      ]
+    },
+    {
+      "tabname": "Changelog",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.2.1"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "2026-11-15",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Same tweak as 1.2.0, now with its own package ID and available from a repo.\n\n- **New repo:** add `https://kolbicz.github.io/repo/` in Sileo or Zebra to get updates automatically.\n- **New package ID:** `cz.kolbi.cylinder`. It replaces the original `com.ryannair05.cylinder`, so installing it removes that package. Your settings and scripts carry over, and packages that depend on the original keep working.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.2.0"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "2026-11-14",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Combines upstream 1.2.0 with this fork's iPad, preferences, and native roothide fixes. Both packages require iOS/iPadOS 15 or later and contain arm64 and arm64e binaries.\n\n### Changes\n\n- Integrates upstream's rewritten animation engine, Lua 5.5.1, revised effects, and icon row/column/center APIs.\n- Preserves iPad rotation cleanup and suspends effects safely during icon editing and multi-icon dragging.\n- Retains CFPreferences-based settings and reliable PreferenceLoader staging.\n- Keeps diagnostic logs inside the jailbreak root and creates a mobile-owned log directory.\n- Preserves newer SpringBoard layout changes when restoring animated icons, incorporating the property-ownership fix from upstream's separate fix branch.\n- Fixes cleanup scheduling, inactive Lua handle access, Lua error handling, invalid numeric inputs, and formula selection/recovery UI issues.\n\n### Verification\n\nBoth package builds passed, along with cleanup regression tests and 2,790 host-side Lua effect scenarios. Package versions, settings entries, binary slices, and native roothide path strings were checked.\n\nPhysical-device testing is still needed for rotation, repeated multi-icon dragging, fly-in/app-return animations, and actual roothide preference redirection. Host-side tests do not verify SpringBoard rendering.\n\nSource and detailed review: [REVIEW-1.2.0.md](https://github.com/kolbicz/Cylinder-Reborn/blob/master/REVIEW-1.2.0.md).",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.1.5"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "2026-10-20",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "This release supports iOS 15 and newer and provides clearly labeled packages for both jailbreak environments:\n\n- `com.ryannair05.cylinder_1.1.5_rootless_iphoneos-arm64.deb`\n- `com.ryannair05.cylinder_1.1.5_roothide_iphoneos-arm64e.deb`\n\n### Changes\n\n- Merges applicable effect and Lua bridge optimizations from upstream commit `5fc3f5b` (May 12, 2025).\n- Optimizes 14 bundled Lua effects.\n- Improves Lua view indexing, table handling, and transform processing.\n- Retains the iPad landscape, icon-drag recovery, preferences, rootless, and roothide fixes from this fork.\n- Keeps roothide preference access isolated from non-roothide mobile preference directories.\n\nBoth packages include the Cylinder settings bundle and PreferenceLoader entry. The tweak and preference binaries contain both arm64 and arm64e slices.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.1.4"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "2026-09-09",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Cylinder Reborn 1.1.4 for iOS 15 and later.\n\nChanges since 1.1.3:\n- Fixes Cylinder effects disappearing after moving multiple icons between Home Screen pages.\n- Suspends page effects while icons are being rearranged and resumes them afterward.\n- Makes Lua effect removal and fallback handling safe.\n- Uses CFPreferences for reliable shared preferences between Settings and SpringBoard.\n- Keeps tweak-owned logs and error state inside the active rootless or roothide jailbreak root.\n- Contains no direct `/var/mobile`, `/private/var`, or preference-plist paths in the roothide binaries.\n\nDownloads:\n- `com.ryannair05.cylinder_1.1.4_rootless_iphoneos-arm64.deb` — rootless jailbreaks.\n- `com.ryannair05.cylinder_1.1.4_roothide_iphoneos-arm64e.deb` — roothide jailbreaks.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.1.3"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "2026-08-22",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Cylinder Reborn 1.1.3 for iOS 15 and later.\n\nChanges:\n- Fixes icons becoming stuck, partially transparent, or misplaced during landscape transitions on iPad.\n- Fixes Cylinder effects disappearing after moving multiple icons between Home Screen pages.\n- Suspends page effects while Home Screen icons are being edited, then resumes them normally afterward.\n- Makes Lua effect failure handling safe when an effect is removed at runtime.\n- Uses CFPreferences for shared Settings/SpringBoard preferences, matching SBTweaker.\n- Moves logs and error state into the active rootless or roothide jailbreak root; no direct mobile-preferences or mobile-log paths are used.\n- Includes clearly named rootless and roothide packages.\n\nChoose the package containing `rootless` or `roothide` in its filename to match your jailbreak environment.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Relaxin"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "2026-07-29",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Recompiled build of **Cylinder-Reborn 1.1.2** for the [Relaxin jailbreak](https://relaxin.owngoal.dev/) (iOS 17.0 – 17.3.1, roothide bootstrap).\n\nNothing was changed feature-wise — this is the same tweak as upstream 1.1.2, rebuilt to run on iOS 17 under the roothide bootstrap. Only the minimal build/compatibility adjustments required for that platform were made.\n\n## Credits\n\nAll credit for the tweak itself goes to the original authors:\n\n- **Reed Weichman ([@rweichler](https://github.com/rweichler))** — original Cylinder\n- **[@ryannair05](https://github.com/ryannair05/Cylinder-Reborn)** — Cylinder-Reborn\n\nThis release is only a compatibility recompile for the Relaxin jailbreak.\n\n## Download\n\nInstall `com.ryannair05.cylinder_1.1.2_iphoneos-arm64e.deb` from the assets below.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "ARM64"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "2024-01-06",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "This deb adds support for ARM64 Rootless devices",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}

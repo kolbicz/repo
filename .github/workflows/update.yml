@@ -1,0 +1,61 @@
+name: Update repo
+
+# Hourly, so new releases of the listed tweaks show up without anyone doing
+# anything. After a release, `gh workflow run update.yml -R kolbicz/repo`
+# publishes it right away.
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Fetch releases and build
+        run: python3 scripts/build.py --fetch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit changes
+        id: commit
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update packages"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Hourly runs that found nothing new leave the site as it is.
+      - if: steps.commit.outputs.changed == 'true' || github.event_name != 'schedule'
+        uses: actions/configure-pages@v6
+
+      - if: steps.commit.outputs.changed == 'true' || github.event_name != 'schedule'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: .
+
+      - if: steps.commit.outputs.changed == 'true' || github.event_name != 'schedule'
+        id: deploy
+        uses: actions/deploy-pages@v5

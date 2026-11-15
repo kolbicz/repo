@@ -1,0 +1,23 @@
+[
+  {
+    "version": "1.0.2",
+    "name": "OTA Toggle v1.0.2",
+    "date": "2026-08-24",
+    "url": "https://github.com/kolbicz/OTAToggle/releases/tag/v1.0.2",
+    "body": "## OTA Toggle v1.0.2\n\n### Fixed\n\n- Fixed incorrect “Enabled” results for daemons previously disabled by DarkSword.\n- Native Foundation file access now uses the real system path directly on roothide.\n- An unreadable or missing `disabled.plist` now produces an explicit error instead of being treated as an empty plist.\n- Retains the platform and storage entitlements required by roothide.\n\n### Downloads\n\n- `OTAToggle-v1.0.2-rootless.deb`: rootless jailbreaks (`iphoneos-arm64`)\n- `OTAToggle-v1.0.2-roothide.deb`: roothide jailbreaks (`iphoneos-arm64e`)\n\nA reboot is required after changing the OTA daemon state.\n"
+  },
+  {
+    "version": "1.0.1",
+    "name": "OTA Toggle v1.0.1",
+    "date": "2026-08-24",
+    "url": "https://github.com/kolbicz/OTAToggle/releases/tag/v1.0.1",
+    "body": "## OTA Toggle v1.0.1\n\n### Fixed\n\n- Fixed reading and writing the real iOS `disabled.plist` on roothide.\n- The roothide helper now uses the official `rootfs()` path-conversion API.\n- Added the platform and storage entitlements required by the roothide developer specification.\n\n### Downloads\n\n- `OTAToggle-v1.0.1-rootless.deb`: rootless jailbreaks (`iphoneos-arm64`)\n- `OTAToggle-v1.0.1-roothide.deb`: roothide jailbreaks (`iphoneos-arm64e`)\n\nThe rootless behavior is unchanged. A reboot is required after changing the OTA daemon state.\n"
+  },
+  {
+    "version": "1.0",
+    "name": "OTA Toggle v1.0",
+    "date": "2026-08-24",
+    "url": "https://github.com/kolbicz/OTAToggle/releases/tag/v1.0",
+    "body": "## OTA Toggle v1.0\n\nInitial public release for iOS and iPadOS 15 or newer.\n\n### Features\n\n- Shows the individual status of all four OTA-related daemons.\n- Automatically checks status when the app opens.\n- Enables or disables all OTA daemons together.\n- Uses atomic plist writes and preserves root ownership and permissions.\n- Offers an optional reboot after applying changes.\n- Supports portrait and landscape orientations on iPhone and iPad.\n- Includes separate packages for rootless and roothide jailbreaks.\n\n### Downloads\n\n- `OTAToggle-v1.0-rootless.deb`: rootless jailbreaks (`iphoneos-arm64`)\n- `OTAToggle-v1.0-roothide.deb`: roothide jailbreaks (`iphoneos-arm64e`)\n\nA reboot is required after enabling or disabling the OTA daemons.\n"
+  }
+]

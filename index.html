@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kolbicz repo</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="CydiaIcon.png">
+</head>
+<body>
+<main>
+<header class="repo">
+<img class="icon" src="CydiaIcon.png" alt="">
+<div><h1>kolbicz</h1><p class="muted">Tweaks by @_kolbicz for rootless and roothide jailbreaks</p></div>
+</header>
+<section class="card add">
+<p>Add this repo to your package manager:</p>
+<div class="url"><code id="url">https://kolbicz.github.io/repo/</code><button type="button" id="copy">Copy</button></div>
+<div class="buttons">
+<a class="button" href="sileo://source/https://kolbicz.github.io/repo/">Add to Sileo</a>
+<a class="button" href="zbra://sources/add/https://kolbicz.github.io/repo/">Add to Zebra</a>
+</div>
+</section>
+<h2>Packages</h2>
+<a class="card package" href="depictions/cz.kolbi.sbtweaker.html">
+<img class="icon small" src="icons/cz.kolbi.sbtweaker.png" alt="">
+<div><h3>SBTweaker <span class="muted">1.4.0</span></h3>
+<p class="muted">Home Screen, Dock and animation tweaks in one package</p></div>
+</a>
+<a class="card package" href="depictions/cz.kolbi.cylinder.html">
+<img class="icon small" src="icons/cz.kolbi.cylinder.png" alt="">
+<div><h3>Cylinder Reborn <span class="muted">1.2.1</span></h3>
+<p class="muted">Make your icons dance</p></div>
+</a>
+<a class="card package" href="depictions/cz.kolbi.otatoggle.html">
+<img class="icon small" src="icons/cz.kolbi.otatoggle.png" alt="">
+<div><h3>OTA Toggle <span class="muted">1.0.2</span></h3>
+<p class="muted">Turn iOS OTA update services on or off</p></div>
+</a>
+<a class="card package" href="depictions/cz.kolbi.appenumguard.html">
+<div class="icon small placeholder"></div>
+<div><h3>AppEnumGuard <span class="muted">1.2</span></h3>
+<p class="muted">Stops apps from finding out which apps you have installed</p></div>
+</a>
+<footer class="muted">
+<a href="https://x.com/_kolbicz">@_kolbicz on X</a> · <a href="https://github.com/kolbicz">GitHub</a>
+</footer>
+<script>
+document.getElementById("copy").addEventListener("click", function () {
+  var button = this;
+  navigator.clipboard.writeText(document.getElementById("url").textContent).then(function () {
+    button.textContent = "Copied";
+    setTimeout(function () { button.textContent = "Copy"; }, 1500);
+  });
+});
+</script>
+</main>
+</body>
+</html>

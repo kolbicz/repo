@@ -1,0 +1,27 @@
+Origin: kolbicz
+Label: kolbicz
+Suite: stable
+Version: 1.0
+Codename: ios
+Date: Sun, 15 Nov 2026 00:00:00 +0000
+Architectures: iphoneos-arm64 iphoneos-arm64e
+Components: main
+Description: Tweaks by @_kolbicz for rootless and roothide jailbreaks
+MD5Sum:
+ 9e21c7e1972ef0a5af3ebdb63d783abe     7722 Packages
+ c0e3be5127c280d16d7e60522c028ddc     1810 Packages.gz
+ 7da842f3e2607b11e9a52ea8391d8262     2022 Packages.bz2
+ 25f0718a75ecae4e6e811615bff38ece     1788 Packages.xz
+ 1e3352f6dd992477faac178367c77aa0     1737 Packages.zst
+SHA1:
+ a0318d26148fa97c784e5bf43b90cfbec9ead48f     7722 Packages
+ 90c62e0bd9082f995cee38cf6c1943c939971beb     1810 Packages.gz
+ 05c47dbf2c79005b5ab4b48d7dd872f5e218c01f     2022 Packages.bz2
+ 4ef02ba80ed3e279bdc9762ffa97bbbcf98d6506     1788 Packages.xz
+ 5dfcd0229ae13dd74676b10c64613cf351d915b9     1737 Packages.zst
+SHA256:
+ 87fe0b763b3fc722027fccb2f9cabcc0680f137a0113318fc5deca454d337866     7722 Packages
+ d885a3e9926b6106c4271f17533465a5a9fc3c67b8b250b47849bb206a784cb7     1810 Packages.gz
+ 891b1c6362914201d2a619c77262162d69089788d0aa31c2820d842316a92e1d     2022 Packages.bz2
+ 02f0e1a8c2a94d5c986439768bfba84a72f83a0e8bcc999a65504ed45e80e7aa     1788 Packages.xz
+ 53530c561558921da22db7285c56815aeec3b3ef22dd628af5732ab44beb04d4     1737 Packages.zst

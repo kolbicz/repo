@@ -1,0 +1,142 @@
+{
+  "minVersion": "0.1",
+  "class": "DepictionTabView",
+  "tintColor": "#FF9500",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Mitigates **CVE-2025-31207**: on iOS before 18.5, any app can find out whether a given app is installed, such as banking, messaging or jailbreak apps, by asking SpringBoard to launch it and comparing the error codes. AppEnumGuard makes SpringBoard answer the same way for installed and missing apps.\n\nNot needed on iOS 18.5 and later, where Apple fixed the issue. A tester app to check the mitigation is available on the GitHub releases page.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.2"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Released",
+          "text": "2026-08-25"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS 15.0 – 18.4.1"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Jailbreaks",
+          "text": "Rootless, Roothide"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "Kolbicz"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "Source Code",
+          "action": "https://github.com/kolbicz/AppEnumGuard",
+          "openExternal": true
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "Report a Problem",
+          "action": "https://github.com/kolbicz/AppEnumGuard/issues",
+          "openExternal": true
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "Follow @_kolbicz on X",
+          "action": "https://x.com/_kolbicz",
+          "openExternal": true
+        }
+      ]
+    },
+    {
+      "tabname": "Changelog",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.2"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "2026-08-25",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Rootless compatibility and corrected vulnerable-version range.\n\n## Changes\n\n* Added a conventional rootless build with arm64 and arm64e slices.\n* Supports any rootHide jailbreak environment through an explicit arm64e\n  rootHide package; no jailbreak-specific integration is required.\n* Changed the package firmware range to iOS 15.0 through 18.4.1. Apple fixed\n  CVE-2025-31207 in iOS 18.5, so the package cannot be installed there or on a\n  later release.\n* Added a polished application icon to the sandboxed tester and included all\n  required iPhone and iPad icon sizes in its IPA.\n* Redesigned the tester with direct icon buttons for WhatsApp, YouTube, and\n  Spotify. It reports green when the selected app is not detectable and red\n  when it is detectable, without a separate confirmation control.\n* Added portrait and landscape rotation with a scrollable adaptive layout.\n* Normalized Spotify, Dopamine, and Reddit selector artwork to the same flat\n  visual style as the other choices.\n* Added Dopamine, TrollStore, and Reddit to the tester's icon grid.\n* Red results now state that AppEnumGuard is not installed. Added an in-app\n  project description and clickable GitHub link.\n* Simplified result handling: only the known vulnerable `9 / 7` signature is\n  red; all other numeric results are green instead of inconclusive.\n* Handles equal results such as `7 / 7` and `9 / 9` as green, accounting for\n  the native fix behavior observed on iOS 18.5. Result text is limited to\n  **App not detected**, or **App detected** with **AppEnumGuard missing**.\n* Standardized the tweak and tester identifiers under the reverse-domain\n  `cz.kolbi` namespace. Package replacement metadata handles the briefly\n  published `kolbi.cz.appenumguard` identifier and the original\n  `com.christoph.appenumerationfix` package.\n* The SpringBoard-side mitigation remains unchanged and continues to validate\n  the private method ABI before installing the hook.\n\n## Assets\n\n* `AppEnumGuard_1.2_rootless_iphoneos-arm64.deb` — conventional rootless\n* `AppEnumGuard_1.2_roothide_iphoneos-arm64e.deb` — rootHide\n* `AppEnumGuardTester_1.2_sandboxed.ipa` — sandboxed tester\n\n## SHA-256\n\n```text\nf416d9b7db95c566312f65d590a9a919124dd195d6fe8d2118287b11a76f34da  AppEnumGuard_1.2_rootless_iphoneos-arm64.deb\n677d5c336a3d5ffab42c475677af85b53531133745d1e4345586aa9fef0c17e8  AppEnumGuard_1.2_roothide_iphoneos-arm64e.deb\ncc78e8f09b31d0811cf5976ac0e88037afcaed4e05d23cbe1cedfff5163061c1  AppEnumGuardTester_1.2_sandboxed.ipa\n```",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.1.1"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "2026-08-02",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Metadata maintenance release of the SpringBoard-side CVE-2025-31207 mitigation.\n\n## Changes\n\n- Changed the Debian package identifier to `cz.kolbi.appenumguard`.\n- Changed the package author and maintainer to `Kolbicz`.\n- Added `Conflicts`, `Replaces`, and `Provides` metadata for the old\n  `com.christoph.appenumerationfix` identifier so package managers do not retain\n  both versions.\n- The tested SpringBoard-side mitigation code is unchanged from 1.1.0.\n\n## Compatibility\n\n- iOS 17.0–17.3.1\n- Relaxin jailbreak with rootHide bootstrap\n- arm64e devices\n- Confirmed on iOS 17.3.1 build 21D61\n\n## Included assets\n\n- `AppEnumGuard_1.1.1_roothide_iphoneos-arm64e.deb`\n- `AppEnumGuardTester_1.1.0_sandboxed.ipa`\n\n## SHA-256\n\n```text\n577e778ac3e2d6cc8bb5b4aad3abecb7939d77fa4c31bbd43a127744f61b51e7  AppEnumGuard_1.1.1_roothide_iphoneos-arm64e.deb\nb19c8d0acc1191c903ab25e601f1f0e2cf69d1dc0f9a4f70b9736f5c019e3522  AppEnumGuardTester_1.1.0_sandboxed.ipa\n```",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.1.0"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "2026-08-02",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "AppEnumGuard 1.1 replaces the per-app mitigation from 1.0 with a centralized,\nSpringBoard-side fix for CVE-2025-31207.\n\n## What changed\n\n- Injects only into SpringBoard, not every UIKit application.\n- Hooks the common `FBSystemService` trust-validation path.\n- Rewrites unauthorized security-policy error 3 to application-not-found error\n  4, making installed and missing bundle identifiers indistinguishable.\n- Validates the private selector's runtime ABI before installing the hook.\n- Removes the v1.0 requirement to enable injection for every protected app.\n- An app can no longer bypass this mitigation merely by detecting or disabling\n  tweak injection in its own process.\n\nVersion 1.0 successfully masked the leak but operated by hooking\nSpringBoardServices inside each application. That design required injection into\nall apps and was unsuitable for injection-sensitive banking and security apps.\n\n## Compatibility\n\n- iOS 17.0–17.3.1\n- Relaxin jailbreak with rootHide bootstrap\n- arm64e devices\n- Confirmed on iOS 17.3.1 build 21D61\n\n## Verification\n\nThe sandboxed tester was run with its own tweak injection disabled:\n\n- Without AppEnumGuard: target `9`, missing `7` — red FAIL.\n- With AppEnumGuard 1.1: target `7`, missing `7` — green PASS.\n\n## Included assets\n\n- `AppEnumGuard_1.1.0_roothide_iphoneos-arm64e.deb`\n- `AppEnumGuardTester_1.1.0_sandboxed.ipa`\n\n## SHA-256\n\n```text\ne1d8ea5c64d32a7399a6c249f501af0f3a8e99bb5c63be27a63e4141c7856488  AppEnumGuard_1.1.0_roothide_iphoneos-arm64e.deb\nb19c8d0acc1191c903ab25e601f1f0e2cf69d1dc0f9a4f70b9736f5c019e3522  AppEnumGuardTester_1.1.0_sandboxed.ipa\n```\n\nAppEnumGuard is a user-space mitigation for the published SpringBoardServices\nside channel, not a substitute for Apple's complete iOS 18.5 fix.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.0.0"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "2026-08-02",
+          "useMargins": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Initial tested release.\n\n## CVE\n\nCVE-2025-31207 is a FrontBoard information-disclosure issue that lets a\nsandboxed app infer which applications are installed from differing private\nSpringBoardServices launch return codes. Apple fixed the underlying OS issue in\niOS/iPadOS 18.5.\n\n## Compatibility\n\n- iOS 17.0–17.3.1\n- Relaxin jailbreak\n- rootHide bootstrap and package architecture\n- arm64e devices; the tweak dylib is arm64e-only\n- Install the `iphoneos-arm64e` rootHide package; do not use a rootless build\n\n## Included assets\n\n- `AppEnumGuard_1.0.0_roothide_iphoneos-arm64e.deb`\n- `AppEnumGuardTester_1.0.0_sandboxed.ipa`\n\n## SHA-256\n\n```text\nd4637d96fca670cca345130dd4603192d350023b22a9f4c70e59a8b9765e9af5  AppEnumGuard_1.0.0_roothide_iphoneos-arm64e.deb\na5f6143c1ca85a07d4f7722b6e38e29041623076d593a9f294160acf1daccf42  AppEnumGuardTester_1.0.0_sandboxed.ipa\n```\n\n## Verification\n\nOn a vulnerable Relaxin/rootHide iOS 17 device with WhatsApp installed:\n\n- Without AppEnumGuard: target `9`, missing `7` — tester reports FAIL.\n- With AppEnumGuard: target `7`, missing `7` — tester reports PASS.\n\nThe tweak is a user-space mitigation for the published SpringBoardServices\nside channel. It is not a substitute for Apple's complete iOS 18.5 fix.",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}
