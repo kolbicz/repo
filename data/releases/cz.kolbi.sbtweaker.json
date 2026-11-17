@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.5.0",
+    "name": "SBTweaker 1.5.0",
+    "date": "2026-11-17",
+    "url": "https://github.com/kolbicz/SBTweaker/releases/tag/v1.5.0",
+    "body": "- **Excluded Apps:** a new list under Settings → SBTweaker → Inside Apps. SBTweaker does nothing inside the apps you switch on there: Fast Copy, Fast Page Transitions and Fast Sheets stay off in them. Switching an app on applies right away; after switching one off, reopen that app.\n- **Manual icon layout backup:** Back Up Layout Now saves your Home Screen, folders and Dock, and Restore Backup brings that layout back at any time. It is kept separately from the automatic backup and works whether or not that is switched on.\n- **Double Tap to Lock:** switching it on now takes effect immediately, like switching it off.\n- **Icon Layout Backup:** switching the backup off and on again no longer restores the layout from before you switched it off. Layout changes made right after a respring are no longer lost when there was nothing to restore.\n- **Fast Page Transitions and Fast Sheets:** when a sheet opens during a page transition, both are now fast; one of them used to play at stock speed.\n- **Dock count:** the custom count is no longer applied to other single-row layouts once the Dock has been found.\n- **Reset to Defaults** asks for confirmation first.\n- Smaller performance improvements: settings are no longer re-read every ten seconds, Fast Copy does less work for each animation inside apps, and less is written to the system log.\n\nEvery option is off by default; enable the ones you want under Settings → SBTweaker.\n\n## Install with Sileo or Zebra\n\nAdd `https://kolbicz.github.io/repo/` as a source in Sileo or Zebra to install SBTweaker and get future updates automatically.\n"
+  },
+  {
     "version": "1.4.0",
     "name": "SBTweaker 1.4.0",
     "date": "2026-11-14",
@@ -61,12 +68,5 @@
     "date": "2026-08-26",
     "url": "https://github.com/kolbicz/SBTweaker/releases/tag/v1.3.3",
     "body": "## SBTweaker 1.3.3\n\n- Fixed custom Home Screen rows and columns reverting to the stock layout when widgets are added on iOS/iPadOS 15.\n- Added support for SpringBoard's `SBIconLocationRootWithWidgets` pages.\n- Preserved existing widgets across resprings by removing direct Home Screen model-grid mutation.\n- Custom grid sizing now uses SpringBoard layout configuration and list-view metrics.\n\nBoth packages support iOS/iPadOS 15 and newer:\n\n- **Rootless:** `iphoneos-arm64`\n- **Roothide:** `iphoneos-arm64e`\n"
-  },
-  {
-    "version": "1.3.2",
-    "name": "SBTweaker 1.3.2",
-    "date": "2026-08-24",
-    "url": "https://github.com/kolbicz/SBTweaker/releases/tag/v1.3.2",
-    "body": "## SBTweaker 1.3.2\n\nSBTweaker supports rootless and roothide jailbreaks on iOS and iPadOS 15 and newer.\n\n### Changes\n\n- Fixed SpringBoard hanging during respring on iOS/iPadOS 15.8.8.\n- Removed synchronous preference writes and migration from early SpringBoard startup; preference migration remains handled safely by the Settings bundle.\n- Replaced class-based injection with explicit SpringBoard, UIKit and UIKitCore bundle filters for compatibility across iOS 15–17.\n- Expanded portrait and landscape grid columns and rows to 1–10.\n- Expanded Dock capacity to 8 icons.\n- Expanded portrait and landscape spacing ranges:\n  - Left and right: up to 160\n  - Top: up to 200\n  - Bottom: up to 400\n- Retains the single Grid and Spacing Settings submenu with independent portrait and landscape enable switches introduced in 1.3.1.\n\n### Packages\n\n- `iphoneos-arm64`: rootless\n- `iphoneos-arm64e`: roothide\n\n### Credits\n\n- DarkSword Tweaks and Cyanide for the original tweak implementations and reference work.\n- OwnGoalStudio/IconRestore for the icon-state save/restore approach.\n- Classic FastAnimations and Fast Copy tweaks for animation and copy-menu inspiration.\n"
   }
 ]

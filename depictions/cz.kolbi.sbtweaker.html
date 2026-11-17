@@ -25,8 +25,8 @@
 </ul>
 <p>Changes apply without a respring wherever SpringBoard allows it.</p></section>
 <h2>Information</h2>
-<section class="card table"><div class="row"><span>Version</span><span>1.4.0</span></div>
-<div class="row"><span>Released</span><span>2026-11-14</span></div>
+<section class="card table"><div class="row"><span>Version</span><span>1.5.0</span></div>
+<div class="row"><span>Released</span><span>2026-11-17</span></div>
 <div class="row"><span>Compatibility</span><span>iOS and iPadOS 15+</span></div>
 <div class="row"><span>Jailbreaks</span><span>Rootless, Roothide</span></div>
 <div class="row"><span>Developer</span><span>Christoph Kolbicz</span></div></section>
@@ -35,7 +35,18 @@
 <a href="https://github.com/kolbicz/SBTweaker/issues">Report a Problem</a>
 <a href="https://x.com/_kolbicz">Follow @_kolbicz on X</a>
 </section>
-<h2>Changelog</h2><section class="release"><h3>1.4.0 <span class="muted">2026-11-14</span></h3><ul>
+<h2>Changelog</h2><section class="release"><h3>1.5.0 <span class="muted">2026-11-17</span></h3><ul>
+<li><strong>Excluded Apps:</strong> a new list under Settings → SBTweaker → Inside Apps. SBTweaker does nothing inside the apps you switch on there: Fast Copy, Fast Page Transitions and Fast Sheets stay off in them. Switching an app on applies right away; after switching one off, reopen that app.</li>
+<li><strong>Manual icon layout backup:</strong> Back Up Layout Now saves your Home Screen, folders and Dock, and Restore Backup brings that layout back at any time. It is kept separately from the automatic backup and works whether or not that is switched on.</li>
+<li><strong>Double Tap to Lock:</strong> switching it on now takes effect immediately, like switching it off.</li>
+<li><strong>Icon Layout Backup:</strong> switching the backup off and on again no longer restores the layout from before you switched it off. Layout changes made right after a respring are no longer lost when there was nothing to restore.</li>
+<li><strong>Fast Page Transitions and Fast Sheets:</strong> when a sheet opens during a page transition, both are now fast; one of them used to play at stock speed.</li>
+<li><strong>Dock count:</strong> the custom count is no longer applied to other single-row layouts once the Dock has been found.</li>
+<li><strong>Reset to Defaults</strong> asks for confirmation first.</li>
+<li>Smaller performance improvements: settings are no longer re-read every ten seconds, Fast Copy does less work for each animation inside apps, and less is written to the system log.</li>
+</ul>
+<p>Every option is off by default; enable the ones you want under Settings → SBTweaker.</p></section>
+<section class="release"><h3>1.4.0 <span class="muted">2026-11-14</span></h3><ul>
 <li><strong>Switching features off works right away:</strong> turning off Dock count, Dock or Home Screen spacing, Icon Scale, or the master switch for these no longer needs a respring. The Home Screen grid on iOS 17 and later still does, because SpringBoard builds its pages with the grid at launch.</li>
 <li><strong>Spacing starts from your device's own margins:</strong> with every extra at 0 the Home Screen and Dock look exactly stock on every iPhone and iPad. If you had adjusted spacing before, check your values after updating, since icons may sit slightly differently.</li>
 <li><strong>Separate Fast Sheets duration:</strong> Fast Sheets now has its own duration, separate from Fast Page Transitions. Your current duration is carried over to both.</li>
@@ -102,31 +113,6 @@
 <ul>
 <li><strong>Rootless:</strong> <code>iphoneos-arm64</code></li>
 <li><strong>Roothide:</strong> <code>iphoneos-arm64e</code></li>
-</ul></section>
-<section class="release"><h3>1.3.2 <span class="muted">2026-08-24</span></h3><p>SBTweaker supports rootless and roothide jailbreaks on iOS and iPadOS 15 and newer.</p>
-<h5>Changes</h5>
-<ul>
-<li>Fixed SpringBoard hanging during respring on iOS/iPadOS 15.8.8.</li>
-<li>Removed synchronous preference writes and migration from early SpringBoard startup; preference migration remains handled safely by the Settings bundle.</li>
-<li>Replaced class-based injection with explicit SpringBoard, UIKit and UIKitCore bundle filters for compatibility across iOS 15–17.</li>
-<li>Expanded portrait and landscape grid columns and rows to 1–10.</li>
-<li>Expanded Dock capacity to 8 icons.</li>
-<li>Expanded portrait and landscape spacing ranges:</li>
-<li>Left and right: up to 160</li>
-<li>Top: up to 200</li>
-<li>Bottom: up to 400</li>
-<li>Retains the single Grid and Spacing Settings submenu with independent portrait and landscape enable switches introduced in 1.3.1.</li>
-</ul>
-<h5>Packages</h5>
-<ul>
-<li><code>iphoneos-arm64</code>: rootless</li>
-<li><code>iphoneos-arm64e</code>: roothide</li>
-</ul>
-<h5>Credits</h5>
-<ul>
-<li>DarkSword Tweaks and Cyanide for the original tweak implementations and reference work.</li>
-<li>OwnGoalStudio/IconRestore for the icon-state save/restore approach.</li>
-<li>Classic FastAnimations and Fast Copy tweaks for animation and copy-menu inspiration.</li>
 </ul></section>
 </main>
 </body>
