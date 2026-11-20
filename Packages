@@ -215,3 +215,47 @@ Size: 87036
 MD5sum: 011f64f7ac5b7cdc9b874acd8490355b
 SHA1: cda0c93089a2d5bb58423df1d93d4e04ad031c8d
 SHA256: 121670b23afa034bd7f5b801d1eae751381993bc9d371f673dea9281fa5d0a9d
+
+Package: cz.kolbi.sbtweaker
+Name: SBTweaker
+Description: Opt-in SpringBoard customizations for rootless and roothide jailbreaks on iOS 15 and newer: dock and Home Screen layouts, icon backup, App Library, double-tap to lock, animations, navigation slide removal in apps, and fast copy.
+Maintainer: Christoph Kolbicz
+Author: Christoph Kolbicz
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader
+Conflicts: com.christoph.sbcustomizer, com.christoph.doubletaplock, com.christoph.noapplibrary, cz.kolbi.noslide
+Replaces: com.christoph.sbcustomizer, com.christoph.doubletaplock, com.christoph.noapplibrary, cz.kolbi.noslide
+Architecture: iphoneos-arm64
+Version: 1.5.1
+Installed-Size: 568
+Icon: https://kolbicz.github.io/repo/icons/cz.kolbi.sbtweaker.png
+Depiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.sbtweaker.html
+SileoDepiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.sbtweaker.json
+Homepage: https://github.com/kolbicz/SBTweaker
+Filename: debs/cz.kolbi.sbtweaker/SBTweaker-1.5.1-rootless.deb
+Size: 87438
+MD5sum: def0fd9b3b05e0b0e8097cb737252426
+SHA1: f64f2a621c8990465f7824e1050f27cb30d790e9
+SHA256: fc3cd260be1139d32c7753aa5591902d54277eefd04b3b61a9e453aa33915187
+
+Package: cz.kolbi.sbtweaker
+Name: SBTweaker
+Description: Opt-in SpringBoard customizations for rootless and roothide jailbreaks on iOS 15 and newer: dock and Home Screen layouts, icon backup, App Library, double-tap to lock, animations, navigation slide removal in apps, and fast copy.
+Maintainer: Christoph Kolbicz
+Author: Christoph Kolbicz
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader
+Conflicts: com.christoph.sbcustomizer, com.christoph.doubletaplock, com.christoph.noapplibrary, cz.kolbi.noslide
+Replaces: com.christoph.sbcustomizer, com.christoph.doubletaplock, com.christoph.noapplibrary, cz.kolbi.noslide
+Architecture: iphoneos-arm64e
+Version: 1.5.1
+Installed-Size: 568
+Icon: https://kolbicz.github.io/repo/icons/cz.kolbi.sbtweaker.png
+Depiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.sbtweaker.html
+SileoDepiction: https://kolbicz.github.io/repo/depictions/cz.kolbi.sbtweaker.json
+Homepage: https://github.com/kolbicz/SBTweaker
+Filename: debs/cz.kolbi.sbtweaker/SBTweaker-1.5.1-roothide.deb
+Size: 87634
+MD5sum: c77eec2a3c7248e032d1069b4ce3494e
+SHA1: 4c4bb8489a42c9182f6c5e1a7e5771ea8944ed0a
+SHA256: da32e5beb2562f5b3a2436894ac64e8b03a77a063285535a30b6cd8799f53e86

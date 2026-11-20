@@ -3,25 +3,25 @@ Label: kolbicz
 Suite: stable
 Version: 1.0
 Codename: ios
-Date: Tue, 17 Nov 2026 00:00:00 +0000
+Date: Fri, 20 Nov 2026 00:00:00 +0000
 Architectures: iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: Tweaks by @_kolbicz for rootless and roothide jailbreaks
 MD5Sum:
- ac703fafaee6b8266d0aa70b5b06e00b    10221 Packages
- 43796166de6f2cbaa50a280469b3cdbb     2034 Packages.gz
- ad6439b32d068024158d44fcbbff2773     2289 Packages.bz2
- ba2d03a6e1f5716d60d7b0fdc9625a8a     1972 Packages.xz
- fabd693d3353f04a06c797a7c42cc13a     1926 Packages.zst
+ 716d193274f65023b2fdd0d77b3b7640    12620 Packages
+ 9e6db00ecd37858abe54ff7716ef6bf5     2255 Packages.gz
+ b8ace512838931ced3488f393d538967     2515 Packages.bz2
+ 0e2576c981f3c84af603ec259ba1712c     2152 Packages.xz
+ ea1ca66dbc889a5128089b69626578dc     2109 Packages.zst
 SHA1:
- afdfdbccadabbea3192a062a91839f9d2f6067b9    10221 Packages
- 01c5a6fa410fb4f416f12fa20b562cfe1676ce14     2034 Packages.gz
- 25529d0574c211a60c3e4aece6f91eec6e388dd3     2289 Packages.bz2
- f1cee5effefcfbb9cc31ac7e7104dac252476938     1972 Packages.xz
- febcef1d08433c811d35d4ba50767741c430fa85     1926 Packages.zst
+ b1e6360f0625fcca7cdf9974804ac49e1c05d303    12620 Packages
+ e23c01f924090420a514324622de20c7381796e3     2255 Packages.gz
+ 5d1b70b334d33a989731a7ca296b13f9e4660285     2515 Packages.bz2
+ 5ec0ba23afed3b71dfb5a7eb0c186687bde839c8     2152 Packages.xz
+ 51da4738ec28f17b01f7f1787d433507f3df7ebd     2109 Packages.zst
 SHA256:
- 0f2921fe57c3e5859439fa8c467269faa457fef4681d13abaedb09c7699b2ab2    10221 Packages
- a2b0d890a691a1d4f80c073f9c10e80e57974b747fbd58acb8c6b694bb7e19ab     2034 Packages.gz
- efa6614327e07acdc8047a5c595f6bad1b4cb60ec6cf5ab2549cc97fdd9ba1a6     2289 Packages.bz2
- b30c407dec89b69e2c174c274c8dffe3c3bcb0b5baf572d4a5027848fe16dc17     1972 Packages.xz
- 9128e02e4c3ee45e470ff617c73c3cbdcfee959fe9445a64c3b8a557d96561c8     1926 Packages.zst
+ d7cf44c65b193ea28db7f484bdef0f16fd2135b863cab4ea96229338736f40cf    12620 Packages
+ be7fd5cba6505007138366900a7374dbec00401256b90d5eeace3d7d7a0cb846     2255 Packages.gz
+ 2b7aefb5cd921297f3d8305235c3c0c17afaf18e1a7de12179baee11fd5bcb47     2515 Packages.bz2
+ 6085f50bfdf56bd2a89a1c0e6cbeeed9c4aaf00eba5b723891ece2f39289a78d     2152 Packages.xz
+ 9715376486d7df5b615a8eee8130f2147815e6c975f766060a7a8272bc1584a3     2109 Packages.zst

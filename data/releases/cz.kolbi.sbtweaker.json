@@ -1,5 +1,12 @@
 [
   {
+    "version": "1.5.1",
+    "name": "SBTweaker 1.5.1",
+    "date": "2026-11-20",
+    "url": "https://github.com/kolbicz/SBTweaker/releases/tag/v1.5.1",
+    "body": "- **More room for Home Screen spacing:** Extra Top and Extra Bottom now go down to -200 and Extra Left and Extra Right to -160 (previously -20), in portrait and landscape. That makes room to move the icons much lower on the screen, for example. Icons never go past the screen edge: spacing stops once it reaches the edge.\n\nEvery option is off by default; enable the ones you want under Settings → SBTweaker.\n"
+  },
+  {
     "version": "1.5.0",
     "name": "SBTweaker 1.5.0",
     "date": "2026-11-17",
@@ -61,12 +68,5 @@
     "date": "2026-09-09",
     "url": "https://github.com/kolbicz/SBTweaker/releases/tag/v1.3.4",
     "body": "- Added an opt-in Spotlight option: opening a search result now dismisses Spotlight and clears its search field, so leaving the app shows the Home Screen instead of the search it was launched from.\n- Fixed the icon layout backup leaking into the shared mobile container on roothide; the snapshot now stays inside the randomized jailbreak root.\n\nThe Spotlight option is off by default — enable it under Settings → SBTweaker → Spotlight.\n\nNote for roothide users: the backup path fix applies to newly written snapshots. Any snapshot already saved to the old path is no longer read, so let one fresh backup be written before relying on a restore."
-  },
-  {
-    "version": "1.3.3",
-    "name": "SBTweaker 1.3.3",
-    "date": "2026-08-26",
-    "url": "https://github.com/kolbicz/SBTweaker/releases/tag/v1.3.3",
-    "body": "## SBTweaker 1.3.3\n\n- Fixed custom Home Screen rows and columns reverting to the stock layout when widgets are added on iOS/iPadOS 15.\n- Added support for SpringBoard's `SBIconLocationRootWithWidgets` pages.\n- Preserved existing widgets across resprings by removing direct Home Screen model-grid mutation.\n- Custom grid sizing now uses SpringBoard layout configuration and list-view metrics.\n\nBoth packages support iOS/iPadOS 15 and newer:\n\n- **Rootless:** `iphoneos-arm64`\n- **Roothide:** `iphoneos-arm64e`\n"
   }
 ]

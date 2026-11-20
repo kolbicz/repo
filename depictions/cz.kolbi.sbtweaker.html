@@ -25,8 +25,8 @@
 </ul>
 <p>Changes apply without a respring wherever SpringBoard allows it.</p></section>
 <h2>Information</h2>
-<section class="card table"><div class="row"><span>Version</span><span>1.5.0</span></div>
-<div class="row"><span>Released</span><span>2026-11-17</span></div>
+<section class="card table"><div class="row"><span>Version</span><span>1.5.1</span></div>
+<div class="row"><span>Released</span><span>2026-11-20</span></div>
 <div class="row"><span>Compatibility</span><span>iOS and iPadOS 15+</span></div>
 <div class="row"><span>Jailbreaks</span><span>Rootless, Roothide</span></div>
 <div class="row"><span>Developer</span><span>Christoph Kolbicz</span></div></section>
@@ -35,7 +35,11 @@
 <a href="https://github.com/kolbicz/SBTweaker/issues">Report a Problem</a>
 <a href="https://x.com/_kolbicz">Follow @_kolbicz on X</a>
 </section>
-<h2>Changelog</h2><section class="release"><h3>1.5.0 <span class="muted">2026-11-17</span></h3><ul>
+<h2>Changelog</h2><section class="release"><h3>1.5.1 <span class="muted">2026-11-20</span></h3><ul>
+<li><strong>More room for Home Screen spacing:</strong> Extra Top and Extra Bottom now go down to -200 and Extra Left and Extra Right to -160 (previously -20), in portrait and landscape. That makes room to move the icons much lower on the screen, for example. Icons never go past the screen edge: spacing stops once it reaches the edge.</li>
+</ul>
+<p>Every option is off by default; enable the ones you want under Settings → SBTweaker.</p></section>
+<section class="release"><h3>1.5.0 <span class="muted">2026-11-17</span></h3><ul>
 <li><strong>Excluded Apps:</strong> a new list under Settings → SBTweaker → Inside Apps. SBTweaker does nothing inside the apps you switch on there: Fast Copy, Fast Page Transitions and Fast Sheets stay off in them. Switching an app on applies right away; after switching one off, reopen that app.</li>
 <li><strong>Manual icon layout backup:</strong> Back Up Layout Now saves your Home Screen, folders and Dock, and Restore Backup brings that layout back at any time. It is kept separately from the automatic backup and works whether or not that is switched on.</li>
 <li><strong>Double Tap to Lock:</strong> switching it on now takes effect immediately, like switching it off.</li>
@@ -103,17 +107,6 @@
 </ul>
 <p>The Spotlight option is off by default — enable it under Settings → SBTweaker → Spotlight.</p>
 <p>Note for roothide users: the backup path fix applies to newly written snapshots. Any snapshot already saved to the old path is no longer read, so let one fresh backup be written before relying on a restore.</p></section>
-<section class="release"><h3>1.3.3 <span class="muted">2026-08-26</span></h3><ul>
-<li>Fixed custom Home Screen rows and columns reverting to the stock layout when widgets are added on iOS/iPadOS 15.</li>
-<li>Added support for SpringBoard's <code>SBIconLocationRootWithWidgets</code> pages.</li>
-<li>Preserved existing widgets across resprings by removing direct Home Screen model-grid mutation.</li>
-<li>Custom grid sizing now uses SpringBoard layout configuration and list-view metrics.</li>
-</ul>
-<p>Both packages support iOS/iPadOS 15 and newer:</p>
-<ul>
-<li><strong>Rootless:</strong> <code>iphoneos-arm64</code></li>
-<li><strong>Roothide:</strong> <code>iphoneos-arm64e</code></li>
-</ul></section>
 </main>
 </body>
 </html>
